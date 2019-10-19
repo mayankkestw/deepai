@@ -1,0 +1,312 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>DeepAI Learn</title>
+
+    <!-- For apple devices -->
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{% static 'images/image.png'%}" type="image/png">
+
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="{% static 'css/LineIcons.css' %}">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{% static 'css/default.css'%}">
+
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/element.css'%}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <style>
+    /*Profile Card 3*/
+.profile-card-3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height:368px;
+  border:none;
+}
+.profile-card-3 .background-block {
+    float: left;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.profile-card-3 .background-block .background {
+  width:100%;
+  vertical-align: top;
+  opacity: 0.9;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+   -webkit-transform: scale(1.8);
+  transform: scale(2.8);
+}
+.profile-card-3 .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  color:#232323;
+  float:left;
+  background:#efefef;
+  height:50%;
+  border-radius:0 0 5px 5px;
+  position: relative;
+  z-index: 9999;
+}
+.profile-card-3 .card-content::before {
+    content: '';
+    background: #efefef;
+    width: 120%;
+    height: 100%;
+    left: 11px;
+    bottom: 51px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-13deg);
+}
+.profile-card-3 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index:99999;
+}
+.profile-card-3 h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size:25px;
+}
+.profile-card-3 h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top:10px;
+}
+.profile-card-3 i {
+  display: inline-block;
+    font-size: 16px;
+    color: #232323;
+    text-align: center;
+    border: 1px solid #232323;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+.profile-card-3 .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+}
+.profile-card-3 .icon-block a{
+    text-decoration:none;
+}
+.profile-card-3 i:hover {
+  background-color:#232323;
+  color:#fff;
+  text-decoration:none;
+}
+    
+    </style>
+
+
+<!-- 
+    news
+-->
+
+
+</head>
+
+<body>
+    
+    <!--====== PRELOADER PART START ======-->
+
+    <!-- <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== NAVBAR PART START ======-->
+
+    <section class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="{% static 'images\image.png' %}" alt="Logo" height="30%", width="30%">
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight" style="background: black !important;">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="{% url 'home'%}">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="{% url 'news'%}">News and Updates</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#python">Python</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#data">Data Analysis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#ml">Machine Learning</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="navbar-btn d-none mt-15 d-lg-inline-block">
+                                <a class="menu-bar" href="#side-menu-right"><i class="lni-menu"></i></a>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+
+
+        <div class="sidebar-right">
+            <div class="sidebar-close">
+                <a class="close" href="#close"><i class="lni-close"></i></a>
+            </div>
+            <div class="sidebar-content">
+                    <section>
+                            <div class="container">
+                                <div class="row">
+                                    
+                                    
+                                    <!--Profile Card 3-->
+                                    <div class="col-md-12">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="{% static 'images/card_back.jpg'%}" alt="profile-sample1" class="background"/>
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="{% static 'images/mayank.jpg'%}" alt="profile-image" class="profile"/>
+                                            </div>
+                                            <div class="card-content">
+                                            <h2>Mayank kestwal<small>Developer</small></h3>
+                                            <div class="icon-block"><a href="#"><i class="lni-facebook"></i></i></a><a href="#"> <i class="lni-twitter"></i></a><a href="#"> <i class="lni-google-plus"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </section>
+            </div><!-- content -->
+        </div>
+        <div class="overlay-right"></div>
+    
+        <!--====== SAIDEBAR PART ENDS ======-->
+
+        {% block content %}
+        {% endblock %}
+
+
+
+ 
+    
+
+    <!--====== jquery js ======-->
+    <script src="{% static 'js/vendor/modernizr-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js '%}"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+
+    <!--====== Slick js ======-->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+
+    <!--====== Isotope js ======-->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+
+    <!--====== Images Loaded js ======-->
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="{% static 'js/scrolling-nav.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.min.js'%}"></script>
+
+    <!--====== wow js ======-->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+
+    <!--====== Main js ======-->
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
